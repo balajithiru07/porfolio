@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin:0;
     padding: 0;
@@ -63,10 +66,29 @@ section{
 .home-content h1{
     line-height: 1.5;
     font-size: 3rem;
+    font-family: monospace;
+    font-size: 40px;
+    white-space: nowrap;
+        overflow: hidden;
+        border-right: 5px solid;
+        width: 70%;
+    animation: type 3s steps(16),blink 0.9s infinite alternate;
 }
 .home-content h1>span{
     color: var(--second-bg-color);
+    
 }
+@keyframes type{
+    from{
+        width:0%;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
 .home-content h3{
     position: relative;
     font-size: 2.2rem;
@@ -131,10 +153,10 @@ section{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: .2rem solid var(--main-color);
+    border: .2rem solid var(--text-color);
     border-radius: 50%;
     font-size: 40px;
-    color: var(--main-color);
+    color: var(--text-color);
     overflow: hidden;
     transition: .7s;
     z-index: 1;
@@ -420,6 +442,9 @@ margin-bottom: 5px;
 
     .home-content h1 {
         font-size: 2rem;
+        width: 57%;
+        padding-left: 20%;
+        
     }
 
     .home-content h3 {
