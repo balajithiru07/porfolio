@@ -66,27 +66,11 @@ section{
 .home-content h1{
     line-height: 1.5;
     font-size: 3rem;
-    font-family: monospace;
-    font-size: 40px;
-    white-space: nowrap;
-        overflow: hidden;
-        border-right: 5px solid;
-        width: 70%;
-    animation: type 3s steps(16),blink 0.9s infinite alternate;
+   
 }
 .home-content h1>span{
     color: var(--second-bg-color);
     
-}
-@keyframes type{
-    from{
-        width:0%;
-    }
-}
-@keyframes blink{
-    50%{
-        border-color: transparent;
-    }
 }
 
 .home-content h3{
