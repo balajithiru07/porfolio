@@ -33,7 +33,7 @@
                 Looking for a job
             </p>  
             <div class="btn-box">
-                <a href="./Balaji_CV.pdf" download="./Balaji_resume.pdf" class="btn">Download CV</a>
+                <a href="./Balaji_CV.pdf" download="./Balaji_resume.pdf" class="btn" id="btn">Download CV</a>
                 <a href="#contact" class="btn">Let's Talk </a>
             </div>
         </div>
@@ -146,5 +146,13 @@ var typed = new Typed('#job-title', {
     backSpeed: 50,   // Speed of backspacing
     loop: true       // Set to true to make the typing loop
   });
+
+
+const btn = document.getElementById('btn')
+
+btn.addEventListener('click',()=>{
+    btn.innerHTML = "Downloaded"
+})
 </script>
+
   
